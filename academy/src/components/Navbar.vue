@@ -49,7 +49,8 @@
     .logo {
       width: 120px;
       margin-left: 8rem;
-      margin-bottom: -.9rem;
+      margin-bottom: -1.5rem;
+      
     }
     
     </style>
