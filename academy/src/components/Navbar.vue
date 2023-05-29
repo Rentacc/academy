@@ -23,7 +23,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px;
+      padding: 0px;
     }
     
     .nav-links{
@@ -47,8 +47,9 @@
     }
     
     .logo {
-      width: 70px;
+      width: 120px;
       margin-left: 8rem;
+      margin-bottom: -.9rem;
     }
     
     </style>
