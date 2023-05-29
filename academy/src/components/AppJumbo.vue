@@ -4,7 +4,7 @@
 
 <template>
     <div class="container">
-  <h1>Professional Development For <hr> Coaches And Leaders</h1>
+  <h1>Professional Development For <hr> Coaches And Leaders <hr class="btnpad"> <a href="#" class="button">Learn More</a> </h1>
 </div>
 </template>
 
@@ -34,6 +34,28 @@ hr {
   margin: 0;
   border: none;
   background-color: transparent;
+}
+
+.btnpad{
+    height: 40px;
+}
+
+.button {
+  padding: 3rem;
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  opacity: .66;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: red;
+  color: white;
 }
 
 </style>
