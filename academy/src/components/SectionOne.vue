@@ -32,16 +32,20 @@
             Since 2000, weve been partnering with education leaders to <hr> <span class="red">increase equity and achievements</span> for all students.
         </h1>
 
-
-        <ul class="none">
-            <li v-for="card in cardOne">
+        
+        <ul>
+            <div class="container">
+            <li class="card" v-for="card in cardOne">
                 
                 <div class="icon"><img :src="card.icon" alt=""></div>
                 <div class="title">{{ card.title }}</div>
                 <div class="description">{{ card.description }}</div>
             
+            
             </li>
+        </div>
         </ul>
+    
 
         <div class="flex">
 
@@ -136,6 +140,30 @@ h1{
 ul li{
     list-style: none;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.card{
+    background-color:whitesmoke;
+    padding: 2rem;
+    margin:3rem;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
