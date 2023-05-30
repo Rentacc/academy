@@ -3,23 +3,25 @@
         data() {
             return {
                 cardTwo: [{
-                    Category:"?",
+                    icon: "public/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg",
+                    category:"Admin University",
                     title: "Peer pressure changes how teens tackle inequality",
                     description: "____",
-                    readmore: "Read more >"
+                    readmore: "Read more >",
                 },
                 {
-                    icon: "iconsrc",
+                    icon: "public/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg",
+                    category:"Admin Education",
                     title: "Lewisham Live Mixtape celebrates borough's",
                     description: "____",
-                    readmore: "Read more >"
+                    readmore: "Read more >",
                 },
                 {
-                    icon: "iconsrc",
-                    price: "Free",
+                    icon: "public/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg",
+                    category:"Admin Education",
                     title: "Turner Prize winnner's work to open Gold on Film festival",
                     description: "____",
-                    readmore: "Read more >"
+                    readmore: "Read more >",
                 },
             ]
             };
