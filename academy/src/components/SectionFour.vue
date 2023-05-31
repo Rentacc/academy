@@ -54,7 +54,7 @@
 section{
     text-align: center;
     font-size: 25px;
-    margin-bottom: rem;
+    
 
 }
 

@@ -1,9 +1,12 @@
 <script>
 
+import Cardone from "./Cardone.vue"
+
+
     export default {
         data() {
             return {
-                cardOne: [{
+                cardArr: [{
                     icon:"public/svg/svg-0.svg",
                     title: "Online Coaching",
                     description: "Lorem ipsum is simply dummy text to printing and typesetting has been the industrys",
@@ -21,7 +24,15 @@
             ]
             };
         },
+
+        components: {
+            Cardone,
+        }
+
+        
     }
+
+
 
 </script>
 
@@ -33,7 +44,7 @@
         </h1>
 
         
-        <ul>
+         <!-- <ul>
             <div class="container">
             <li class="card" v-for="card in cardOne">
                 
@@ -44,7 +55,16 @@
             
             </li>
         </div>
-        </ul>
+        </ul> -->
+
+        <div class="container">
+            <Cardone class="card" v-for="card in cardArr"
+            :key="card.key"
+            :icon="card.icon"
+            :title="card.title"
+            :description="card.description"
+            />
+        </div>
     
 
         <div class="flex">
