@@ -142,7 +142,23 @@
       color: #777777;
     }
 
-    
+    a{
+  transition: color 0.3s ease, margin-left 0.3s ease; 
+}
+
+    a:hover {
+  color: red; 
+  margin-left: 1rem; 
+}
+
+p{
+  transition: color 0.3s ease, margin-left 0.3s ease; 
+}
+
+    p:hover {
+  color: red; 
+  margin-left: 1rem; 
+}
 
     
 

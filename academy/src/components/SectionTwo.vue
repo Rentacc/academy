@@ -1,8 +1,10 @@
 <script>
+import CardTwo from "./CardTwo.vue"
+
  export default {
         data() {
             return {
-                cardTwo: [{
+                cardArr: [{
                     icon:"public/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg",
                     price: "Free",
                     title: "UI Animation using Sketch 3, Principle App, and Flinto",
@@ -26,6 +28,11 @@
             ]
             };
         },
+
+        components: {
+            CardTwo,
+        }
+
     }
 </script>
 
@@ -37,7 +44,7 @@
 
 <ul>
     <div class="container">
-            <li class="card" v-for="card in cardTwo">
+            <li class="card" v-for="card in cardArr">
                 <div class="icon"><img :src="card.icon" alt=""></div>
                 <div class="price">{{ card.price }}</div>
                 <div class="title">{{ card.title }}</div>
@@ -46,6 +53,19 @@
             </li>
         </div>
         </ul>
+
+        <!-- <div class="container">
+            <Cardone class="card" v-for="card in cardArr"
+            :key="card.key"
+            :icon="card.icon"
+            :price="card.price"
+            :title="card.title"
+            :description="card.description"
+            :courseby="card.courseby"
+            />
+        </div> -->
+    
+
 </template>
 
 

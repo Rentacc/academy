@@ -42,4 +42,14 @@ export default{
 ul li{
     list-style: none;
 }
+
+.card {
+  transition: color 0.3s ease; /* Transizione del colore durante l'hover */
+}
+
+.card:hover .title {
+  color: red; /* Colore del titolo durante l'hover */
+}
+
+
 </style>

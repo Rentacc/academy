@@ -52,5 +52,25 @@
       margin-bottom: -1.5rem;
       
     }
+
+    li a {
+  color: black; 
+  text-decoration: none; 
+  position: relative; 
+}
+
+li a:hover {
+  color: red; 
+}
+
+li a:hover::after {
+  content: ""; 
+  position: absolute; 
+  bottom: -2px; 
+  left: 50%; 
+  width: 50%; 
+  height: 1px; 
+  background-color: red; 
+}
     
     </style>
