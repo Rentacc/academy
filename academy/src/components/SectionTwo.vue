@@ -42,7 +42,7 @@ import CardTwo from "./CardTwo.vue"
     <p>Wheter you're considering a foundation course or an undergraduate degree master's <hr> or a PhD, academics is a place where students thrive</p>
 </section>
 
-<ul>
+<!-- <ul>
     <div class="container">
             <li class="card" v-for="card in cardArr">
                 <div class="icon"><img :src="card.icon" alt=""></div>
@@ -52,10 +52,10 @@ import CardTwo from "./CardTwo.vue"
                 <div class="red">{{ card.courseby }}</div>
             </li>
         </div>
-        </ul>
+        </ul> -->
 
-        <!-- <div class="container">
-            <Cardone class="card" v-for="card in cardArr"
+        <div class="container">
+            <CardTwo class="card" v-for="card in cardArr"
             :key="card.key"
             :icon="card.icon"
             :price="card.price"
@@ -63,7 +63,7 @@ import CardTwo from "./CardTwo.vue"
             :description="card.description"
             :courseby="card.courseby"
             />
-        </div> -->
+        </div>
     
 
 </template>

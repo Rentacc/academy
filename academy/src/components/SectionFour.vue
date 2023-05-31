@@ -1,8 +1,10 @@
 <script>
+import CardThree from "./CardThree.vue"
+
  export default {
         data() {
             return {
-                cardTwo: [{
+                cardArr: [{
                     icon: "public/img/news-3-2.jpg",
                     category:"Admin University",
                     title: "Peer pressure changes how teens tackle inequality",
@@ -26,6 +28,9 @@
             ]
             };
         },
+        components: {
+            CardThree,
+        }
     }</script>
 
 <template>
@@ -33,20 +38,18 @@
     <h1>Latest From Our Blogs</h1>
     <p>Wheter you're a foundation course or an undergraduate degree master's <hr> or a PhD, academics is a place where students thrive.</p>
 
-    <ul>
-            <div class="container">
-            <li class="card" v-for="card in cardTwo">
-                
-                <div class="icon"><img :src="card.icon" alt=""></div>
-                <div class="category">{{ card.category }}</div>
-                <div class="title">{{ card.title }}</div>
-                <div class="description">{{ card.description }}</div>
-                <div class="readmore">{{ card.readmore }}</div>
-            
-            
-            </li>
+   
+
+        <div class="container">
+            <CardThree class="card" v-for="card in cardArr"
+            :key="card.key"
+            :icon="card.icon"
+            :category="card.category"
+            :title="card.title"
+            :description="card.description"
+            :readmore="card.readmore"
+            />
         </div>
-        </ul>
 </section>
 
 </template>
